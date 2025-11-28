@@ -1,0 +1,30 @@
+# NLP & Transformers
+transformers
+datasets
+torch
+
+# Fuzzy Logic
+scikit-fuzzy
+
+# Machine Learning Basics
+numpy
+pandas
+scikit-learn
+
+# Metaheuristics
+pyswarms      # PSO
+deap          # GA
+
+# Utilities
+tqdm
+matplotlib
+
+# Optional debugging & environment
+python-dotenv
+
+
+# datasets
+datasets
+
+#scikit-learn
+scikit-learn

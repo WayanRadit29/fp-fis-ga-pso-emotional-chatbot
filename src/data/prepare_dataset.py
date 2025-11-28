@@ -56,5 +56,6 @@ df_test = pd.DataFrame({"text": test_texts, "tone": test_tones})
 df_train.to_csv("../../data/processed/train_tone.csv", index=False)
 df_test.to_csv("../../data/processed/test_tone.csv", index=False)
 
+
 print("Dataset selesai diproses!")
 print("File tersimpan di data/processed/")
