@@ -9,8 +9,8 @@ import os
 # =========================
 # 1. Load Dataset (train/test)
 # =========================
-train_df = pd.read_csv("../../data/processed/train_tone.csv")
-test_df = pd.read_csv("../../data/processed/test_tone.csv")
+train_df = pd.read_csv("data/processed/train_tone.csv")
+test_df = pd.read_csv("data/processed/test_tone.csv")
 
 # =========================
 # 2. Load Roberta-GoEmotions Model
@@ -74,7 +74,7 @@ y_test = test_df["tone"].map(tone_classes).values
 # =========================
 # 7. Save hasil ke data/processed
 # =========================
-save_dir = "../../data/processed/"
+save_dir = "data/processed"
 os.makedirs(save_dir, exist_ok=True)
 
 np.save(os.path.join(save_dir, "X_train.npy"), X_train)
