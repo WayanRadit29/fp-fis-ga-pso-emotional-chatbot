@@ -9,6 +9,6 @@
 
 ## Arsitektur Singkat
 1) NLP → skor probabilitas emosi  
-2) FIS (Mamdani, trimf; 4 input, 1 output)  
-3) Optimasi parameter MF: GA vs PSO  
+2) FIS (Mamdani, trimf; 6 input, 1 output)  
+3) Optimasi parameter MF Output: GA vs PSO  
 4) Evaluasi: F1-weighted, akurasi, waktu, stabilitas
