@@ -4,7 +4,7 @@ import numpy as np
 import skfuzzy as fuzz
 import skfuzzy.control as ctrl
 import random
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 import warnings
 
@@ -146,7 +146,7 @@ class GAFISOptimizer:
         
         try:
             y_pred = fis.predict_batch(X_batch)
-            return accuracy_score(y_batch, y_pred)
+            return f1_score(y_batch, y_pred, average='weighted')
         except:
             return 0.0
 

@@ -1,7 +1,7 @@
 import numpy as np
 import skfuzzy as fuzz
 import skfuzzy.control as ctrl
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
 import sys
 import os
 
@@ -143,7 +143,7 @@ class PSOFISOptimizer:
             y_pred = model.predict_batch(X_batch)
             
             # Hitung Akurasi
-            return accuracy_score(y_batch, y_pred)
+            return f1_score(y_batch, y_pred, average='weighted')
         except Exception:
             # Penalty jika konfigurasi parameter menyebabkan error
             return 0.0
